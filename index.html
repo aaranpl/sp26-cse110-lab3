@@ -1,106 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Meeting Notes</title>
     <link rel="stylesheet" href="my-style.css">
-    <title> Meeting Notes</title>
     <style>
-        body {
-            font-family: Courier, sans-serif;
-            margin: 20px;
-        }
-
-        h1 {
-            color: black;
-        }
-        h2 {
-            color: rgba(121, 18, 169, 0.574);
-        }
-        ol {
-            margin-left: 20px;
-        }
-        </style>
+      body {
+        font-family: Courier, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: black;
+      }
+      h2 {
+        color: rgba(121, 18, 169, 0.574);
+      }
+      ol {
+        margin-left: 20px;
+      }
+    </style>
   </head>
 
+  <body>
+    <div class="content-wrapper">
+      <h1>Project Ideas & Accessories Notes</h1>
+      <h2>Date: April 9, 2026</h2>
 
-  <body> <div class="content-wrapper">
-    <h1> Project Ideas & Accessories Notes</h1>
-    <h2> Date: April 9, 2026</h2>
-    
-    <div class = "section-card">
-    <h3 style = "color: rgb(31, 82, 22);">Members</h3>
-    
+      <div class="section-card">
+        <h3 style="color: rgb(31, 82, 22);">Members</h3>
+        <p>Please check the box next to your name if you are present:</p>
+        <ol>
+          <li><input type="checkbox"> Steven Spielberg</li>
+          <li><input type="checkbox"> Christan Bale</li>
+          <li><input type="checkbox"> Bob Johnson</li>
+          <li><input type="checkbox"> Gregory Heff</li>
+          <li><input type="checkbox"> Paul Anderson</li>
+          <li><input type="checkbox"> Mary Shaw</li>
+        </ol>
+      </div>
 
-    <p> Please check the box next to your name if you are present:</p>
-    <ol>
-        
-        
-        <li> <input type="checkbox"> Steven Spielberg</li>
-        <li> <input type="checkbox"> Christan Bale</li>
-        <li> <input type="checkbox"> Bob Johnson</li>
-        <li> <input type="checkbox"> Gregory Heff</li>
-        <li> <input type="checkbox"> Paul Anderson</li>
-        <li> <input type="checkbox"> Mary Shaw</li>
-    </ol>
-    </div>
+      <h3 id="minutes">Previous Meeting Minutes</h3>
+      <p>In the previous meeting, we discussed potential project ideas and accessories that could complement our main project. We also assigned preliminary tasks to team members to research and gather more information on these ideas.</p>
 
-    <h3 id="minutes">Previous Meeting Minutes</h3>
-    <p> In the previous meeting, we discussed potential project ideas and accessories that could complement our main project. We also assigned preliminary tasks to team members to research and gather more information on these ideas.</p>
+      <img src="https://images.unsplash.com/photo-1635372722656-389f87a941b7?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        width="450" alt="Meeting Image">
 
-    <img src="https://images.unsplash.com/photo-1635372722656-389f87a941b7?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    width ="450"
-    alt ="Meeting Image">
+      <div class="agenda-bar">
+        <h3>Agenda</h3>
+        <ol>
+          <li><a href="#minutes">Review of previous meeting minutes</a></li>
+          <li><a href="#Project">Discussion of project ideas</a></li>
+          <li><a href="#Accessories">Discussion of accessories</a></li>
+          <li><a href="#Future">Assigning tasks for next steps</a></li>
+        </ol>
+      </div>
 
-    <div class="agenda-bar"> 
-    <h3> Agenda</h3>
-    <ol>
-        <li><a href="minutes"> Review of previous meeting minutes </a></li>
-        <li> <a href="Project">Discussion of project ideas</a></li>
-        <li> <a href="Accessories"> Discussion of accessories</a></li>
-        <li><a href="Future"> Assigning tasks for next steps</a></li>
-    </ol>
-    </div>
-    
-    <h3 id="Project"> Project Ideas</h3>
-    <ol>
-        
-        <li> 
-            <ul>
-            <li> Idea 1: A mobile app that helps users track their daily water intake and provides reminders to stay hydrated.</li>
-            <li> Idea 2: A web platform that connects local farmers with consumers, allowing them to sell fresh produce directly.</li>
-            <li> Idea 3: An AI-powered virtual assistant that helps users manage their schedules and tasks more efficiently.</li>
-            </ul>
+      <h3 id="Project">Project Ideas</h3>
+      <ol>
+        <li>
+          <ul>
+            <li>Idea 1: A mobile app that helps users track their daily water intake and provides reminders to stay hydrated.</li>
+            <li>Idea 2: A web platform that connects local farmers with consumers, allowing them to sell fresh produce directly.</li>
+            <li>Idea 3: An AI-powered virtual assistant that helps users manage their schedules and tasks more efficiently.</li>
+          </ul>
         </li>
-        
-    </ol>
+      </ol>
 
-    <h3 id="Accessories"> Accessories</h3>
-    <ol>
-        
-        <li> 
-            <ul>
-            <li> Accessory 1: A wireless charging pad that can charge multiple devices simultaneously.</li>
-            <li> Accessory 2: A smart watch with advanced health monitoring features, such as heart rate tracking and sleep analysis.</li>
-            <li> Accessory 3: A portable Bluetooth speaker with high-quality sound and long battery life.</li>
-            </ul>
+      <h3 id="Accessories">Accessories</h3>
+      <ol>
+        <li>
+          <ul>
+            <li>Accessory 1: A wireless charging pad that can charge multiple devices simultaneously.</li>
+            <li>Accessory 2: A smart watch with advanced health monitoring features, such as heart rate tracking and sleep analysis.</li>
+            <li>Accessory 3: A portable Bluetooth speaker with high-quality sound and long battery life.</li>
+          </ul>
         </li>
-    </ol>
+      </ol>
 
-    <video controls>
+      <video controls>
         <source src="assests/meeting.mp4" type="video/mp4">
-    </video>
+      </video>
 
-    <audio controls>
+      <audio controls>
         <source src="assests/Cse110Lab2VID.mp3" type="audio/mpeg">
-    </audio>
+      </audio>
 
-    <h3 id="Future"> For Next Meeting</h3>
-    <ol>
-        <li> Each team member will research the feasibility and potential market for the selected project idea.</li>
-        <li> Team members will also research the accessories and determine which ones would best complement the project.</li>
-        <li> We will reconvene in two weeks to discuss our findings and make decisions on the next steps.</li>
-    </ol>
-    <h3> Comments</h3>
-    <p> Please feel free to add any comments or suggestions regarding the project ideas and accessories discussed in this meeting.</p>
+      <h3 id="Future">For Next Meeting</h3>
+      <ol>
+        <li>Each team member will research the feasibility and potential market for the selected project idea.</li>
+        <li>Team members will also research the accessories and determine which ones would best complement the project.</li>
+        <li>We will reconvene in two weeks to discuss our findings and make decisions on the next steps.</li>
+      </ol>
+
+      <h3>Comments</h3>
+      <p>Please feel free to add any comments or suggestions regarding the project ideas and accessories discussed in this meeting.</p>
     </div>
   </body>
 </html>

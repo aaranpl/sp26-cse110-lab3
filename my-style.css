@@ -1,16 +1,7 @@
-.section-card {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-input[type="checkbox"] {
-  accent-color: var(--accent-color, #3498db);
-  width: 1rem;   
-  height: 1rem;
-  margin-right: 0.5rem;
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --border-radius: 8px;
 }
  
 /* --- Universal Selector --- */
@@ -20,52 +11,28 @@ input[type="checkbox"] {
   padding: 0;
 }
  
-
-/* --- Class Selector --- */
-.section-card {
-  background-color: #ffffff;
-  /* Border longhand */
-  border-style: solid;
-  border-color: #dce1e7;
-  border-width: 1px;
-  border-radius: var(--border-radius, 8px);
-  /* Padding longhand */
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  /* Margin shorthand */
-  margin: 1.5rem 0 1.5rem 0;
-}
- 
-/* --- Attribute Selector --- */
-input[type="checkbox"] {
-  accent-color: var(--accent-color, #3498db);
-  width: 1rem;   /* relative unit */
-  height: 1rem;
-  margin-right: 0.5rem;
+/* --- Main content wrapper --- */
+.content-wrapper {
+  max-width: 860px;
+  min-width: 300px;
+  margin: 0 auto;
 }
  
 /* --- h1 Element Selector --- */
 h1 {
-  /* Color: color name */
   color: var(--primary-color, #2c3e50);
-  font-size: 2.2rem;      /* relative unit */
+  font-size: 2.2rem;
   text-align: center;
-  /* Margin shorthand */
   margin: 1rem 0 0.5rem 0;
-  /* Text decoration */
   text-decoration: underline;
   text-decoration-color: var(--accent-color, #3498db);
 }
  
 /* --- h2 Element Selector --- */
 h2 {
-  /* Color: rgb() */
   color: rgb(100, 116, 139);
   text-align: center;
   font-size: 1rem;
-  /* Margin longhand */
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
   margin-left: 0;
@@ -74,15 +41,28 @@ h2 {
  
 /* --- h3 Element Selector --- */
 h3 {
-  /* Color: hex */
   color: #2c3e50;
   font-size: 1.2rem;
-  /* Padding shorthand */
   padding: 0.5rem 0 0.25rem 0;
   border-bottom: 2px solid #e2e8f0;
   margin-bottom: 0.75rem;
 }
  
+/* --- Class Selector --- */
+.section-card {
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #dce1e7;
+  border-width: 1px;
+  border-radius: var(--border-radius, 8px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+ 
+/* --- Nested Selectors --- */
 .section-card {
   & h3 {
     color: var(--primary-color, #2c3e50);
@@ -94,20 +74,23 @@ h3 {
   }
 }
  
+/* --- Attribute Selector --- */
+input[type="checkbox"] {
+  accent-color: var(--accent-color, #3498db);
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+ 
 /* --- Image styling --- */
 img {
   display: block;
-  /* max-width and width */
   width: 100%;
   max-width: 450px;
-  /* min-width */
   min-width: 200px;
-  /* height */
   height: auto;
-  /* Border shorthand */
   border: 3px solid #dce1e7;
   border-radius: var(--border-radius, 8px);
-  /* Margin: auto for centering */
   margin: 1rem auto;
 }
  
@@ -120,61 +103,25 @@ video, audio {
   border-radius: var(--border-radius, 8px);
 }
  
-/* --- HEADER / HERO section using Flexbox --- */
-.page-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  /* Background color */
-  background-color: var(--primary-color, #2c3e50);
-  color: #ffffff;
-  /* Absolute unit: pt for padding */
-  padding: 24pt 16pt;
-  border-radius: var(--border-radius, 8px);
-  margin-bottom: 2rem;
-  /* Position */
-  position: relative;
-}
- 
-
-/* --- Sticky nav-like agenda bar --- */
+/* --- Sticky agenda bar --- */
 .agenda-bar {
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  /* Border shorthand */
   border: 1px solid #dce1e7;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
   margin-bottom: 1.5rem;
   z-index: 100;
-  /* Absolute unit: cm — small shadow offset */
-  box-shadow: 0 0.05cm 0.15cm rgba(0,0,0,0.08);
+  box-shadow: 0 0.05cm 0.15cm rgba(0, 0, 0, 0.08);
 }
  
 .attendance-grid li {
   list-style: none;
   background-color: #f8fafc;
   border-radius: 4px;
-  /* Padding longhand */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
- 
-/* --- Main content wrapper --- */
-.content-wrapper {
-  max-width: 860px;
-  min-width: 300px;
-  margin: 0 auto;
-}
- 
-img {
-    min-width: unset;
-    width: 100%;
-  }
- 
-  
