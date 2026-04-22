@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="my-style.css">
     <title> Meeting Notes</title>
+    <style>
+        body {
+            font-family: Courier, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: black;
+        }
+        h2 {
+            color: rgba(121, 18, 169, 0.574);
+        }
+        ol {
+            margin-left: 20px;
+        }
+        </style>
   </head>
-  <body>
+
+
+  <body> <div class="content-wrapper">
     <h1> Project Ideas & Accessories Notes</h1>
     <h2> Date: April 9, 2026</h2>
     
-    <h3>Members</h3>
+    <div class = "section-card">
+    <h3 style = "color: rgb(31, 82, 22);">Members</h3>
+    
+
     <p> Please check the box next to your name if you are present:</p>
     <ol>
         
@@ -19,6 +41,7 @@
         <li> <input type="checkbox"> Paul Anderson</li>
         <li> <input type="checkbox"> Mary Shaw</li>
     </ol>
+    </div>
 
     <h3 id="minutes">Previous Meeting Minutes</h3>
     <p> In the previous meeting, we discussed potential project ideas and accessories that could complement our main project. We also assigned preliminary tasks to team members to research and gather more information on these ideas.</p>
@@ -27,6 +50,7 @@
     width ="450"
     alt ="Meeting Image">
 
+    <div class="agenda-bar"> 
     <h3> Agenda</h3>
     <ol>
         <li><a href="minutes"> Review of previous meeting minutes </a></li>
@@ -34,7 +58,8 @@
         <li> <a href="Accessories"> Discussion of accessories</a></li>
         <li><a href="Future"> Assigning tasks for next steps</a></li>
     </ol>
-
+    </div>
+    
     <h3 id="Project"> Project Ideas</h3>
     <ol>
         
@@ -76,6 +101,6 @@
     </ol>
     <h3> Comments</h3>
     <p> Please feel free to add any comments or suggestions regarding the project ideas and accessories discussed in this meeting.</p>
-
+    </div>
   </body>
 </html>
